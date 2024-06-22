@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Draw and Notes</title>
+    <style>
+        body {
+            font-family: 'Agraham', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, rgb(96, 108, 56), rgb(40, 54, 24));
+            background-clip: text; /* Clip text to apply gradient */
+            -webkit-background-clip: text; /* For Safari */
+            animation: moveGradient 5s linear infinite; /* Animation to move gradient */
+            color: #333;
+            background-color: rgb(254, 250, 224); /* Light yellow background */
+        }
+
+        @keyframes moveGradient {
+            from {
+                background-position: 0% 50%;
+            }
+            to {
+                background-position: 100% 50%;
+            }
+        }
+
+        .intro-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(255, 254, 249); /* Light background for container */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .intro-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+           
+        }
+
+        .intro-container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-family: "Avenir";
+        }
+
+        .start-button {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 1.2rem;
+            background-color: rgb(40, 54, 24); /* Dark green background */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.35s ease;
+        }
+
+        .start-button:hover {
+            background-color: rgb(30, 44, 14); /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container">
+        <h1>Welcome to Draw and Notes</h1>
+        <p>Explore your creativity and unwind with an interactive drawing tool. Everyone deserves a space to relax, recharge, and clear their mind. This space is for you. Enjoy!</p>
+        <a href="space.html" class="start-button">Get Started</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora la Mitología</title>
+    <style>
+        /* Reset de estilos básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos globales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .destino {
+            margin-bottom: 1rem;
+        }
+
+        .destino img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .destino h3 {
+            margin-top: 0.5rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explora la Mitología Griega y Romana</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#historias">Historias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a nuestro sitio de viajes mitológicos</h2>
+            <p>Descubre lugares mágicos y legendarios inspirados en la mitología griega y romana.</p>
+            <a href="#destinos" class="button">Explora nuestros destinos</a>
+        </section>
+
+        <section id="destinos">
+            <h2>Destinos destacados</h2>
+            <div class="destino">
+                <img src="img/atenas.jpg" alt="Atenas">
+                <h3>Atenas, Grecia</h3>
+                <p>Explora la cuna de la civilización griega y descubre sus mitos y leyendas.</p>
+            </div>
+            <!-- Agrega más destinos -->
+        </section>
+
+        <section id="historias">
+            <h2>Historias y leyendas</h2>
+            <article>
+                <h3>La leyenda de Hércules</h3>
+                <p>Conoce la historia del héroe griego y sus doce trabajos.</p>
+            </article>
+            <!-- Agrega más historias -->
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explora la Mitología - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

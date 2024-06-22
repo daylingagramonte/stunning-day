@@ -1,0 +1,331 @@
+<style>
+
+ body {
+    background-color: rgb(254, 250, 224);
+    color:rgb(40, 54, 24);
+    font-family: Avenir;
+    margin: 0;
+}
+
+.up {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos equitativamente */
+    align-items: center;
+    height: 120px;
+    padding: 10px;
+    background-color: rgb(254, 250, 224);
+}
+
+.flin a {
+    color: inherit; /* Hereda el color del texto del botón */
+            text-decoration: none; /* Anula el subrayado del enlace */
+        }
+
+
+.flin {
+    padding: 10px 20px; /* Espacio interior del botón */
+    background-color: transparent; /* Fondo transparente */
+    border: none;
+    cursor: pointer;
+    color: rgb(40, 54, 24);
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    background-color:rgb(254, 250, 224);
+    margin-right: 14px;
+    font-size: 14.5px;
+    font-weight: bold;
+    font-family: Avenir;
+    background-color: rgb(254, 250, 224); /* Cambia el color de fondo al hacer hover */
+    background-image: linear-gradient(to right, rgb(96, 108, 56), rgb(40, 54, 24)); /* Gradiente invertido para el texto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+font-family: Agraham;
+position: relative;
+    display: inline-block;
+    background-clip: text; /* Aplica el gradiente al texto */
+    -webkit-background-clip: text; /* Para compatibilidad con navegadores WebKit */
+    color: transparent; /* Oculta el color de texto por defecto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+    
+    
+    
+}
+
+.flin:hover { 
+     background-color: rgb(254, 250, 224); /* Cambia el color de fondo al hacer hover */
+    background-image: linear-gradient(to right, rgb(96, 108, 56), rgb(40, 54, 24)); /* Gradiente invertido para el texto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+font-family: Agraham;
+position: relative;
+    display: inline-block;
+    background-clip: text; /* Aplica el gradiente al texto */
+    -webkit-background-clip: text; /* Para compatibilidad con navegadores WebKit */
+    color: transparent; /* Oculta el color de texto por defecto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+}
+
+
+@keyframes moveGradient {
+    from {
+        background-position: 0% 50%; /* Comienza desde la izquierda */
+    }
+    to {
+        background-position: 100% 50%; /* Termina a la derecha */
+    }
+}
+
+
+
+.f {
+    padding: 10px; /* Espacio interior del campo de entrada */
+    font-size: 16px;
+    border: 1px solid rgb(96, 108, 56); /* Borde del campo de entrada */
+    border-radius: 16px; /* Borde redondeado */
+    margin-left: 10px; /* Margen izquierdo entre el botón y el campo de entrada */
+    width: 960px;
+    background-color: rgb(40, 54, 24);
+    color: rgb(254, 250, 224);
+    opacity: 0.4;
+}
+.linea-separadora {
+    border: none;
+    border-top: 2px solid rgba(40, 54, 24, 0.1); /* Línea superior para separar */
+    margin: 0; /* Elimina todo margen */
+    padding: 0; /* Elimina todo padding */
+
+}
+
+ 
+      /* Estilos para el contenedor de la cuadrícula Pinterest */
+      .pinterest-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columnas responsivas, con ancho mínimo de 200px */
+        grid-gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+        padding: 20px;
+    }
+
+    /* Estilos para cada elemento de la cuadrícula Pinterest */
+    .pinterest-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Ajustes para hacer los elementos más cuadrados */
+        padding-bottom: 100%; /* Relación 1:1 de ancho y alto */
+    }
+
+    .pinterest-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio del contenedor */
+        border-radius: 8px; /* Añade borde redondeado a las imágenes */
+    }
+
+
+
+</style>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web al estilo Pinterest</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el archivo CSS -->
+</head>
+<body>
+    <div class="up">
+        <button class="flin"><a href="file:///C:/Users/Coolby/Desktop/html-css-course/sam.html">Inicio</a></button>
+        <button class="flin">Explorar</button>
+        <button class="flin">Crear</button>
+        <form action="/ruta/del/procesamiento" method="GET">
+            <input type="text" placeholder="🔍︎ Buscar..." name="q" class="f">
+        </form>
+        <button class="flin">Notificaciones</button>
+    </div><hr class="linea-separadora">
+    
+ <!-- Contenedor de imágenes al estilo Pinterest -->
+ <div class="pinterest-grid">
+    <!-- Primer bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-43-00%20(2).jpg" alt="Descripción de la primera imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-49-43.jpg" alt="Descripción de la segunda imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-01.jpg" alt="Descripción de la tercera imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Segundo bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-43-00.jpg" alt="Descripción de la cuarta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-43-00%20(1).jpg" alt="Descripción de la quinta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-01%20(1).jpg" alt="Descripción de la sexta imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Tercer bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-42-43.jpg" alt="Descripción de la séptima imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-01%20(3).jpg" alt="Descripción de la octava imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-55-58%20(2).jpg" alt="Descripción de la novena imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Cuarto bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-55-55.jpg" alt="Descripción de la décima imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-01%20(6).jpg" alt="Descripción de la undécima imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-00%20(3).jpg" alt="Descripción de la duodécima imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Quinto bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-50-01%20(5).jpg" alt="Descripción de la decimotercera imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-43-00%20(5).jpg" alt="Descripción de la decimocuarta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-43-00%20(6).jpg" alt="Descripción de la decimoquinta imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Sexto bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-42-59%20(2).jpg" alt="Descripción de la decimosexta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-49-45.jpg" alt="Descripción de la decimoséptima imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-50-01%20(3).jpg" alt="Descripción de la decimoctava imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Séptimo bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-01%20(4).jpg" alt="Descripción de la decimonovena imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-55-58.jpg" alt="Descripción de la vigésima imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-01%20(5).jpg" alt="Descripción de la vigesimoprimera imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Octavo bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-49-43%20(2).jpg" alt="Descripción de la vigesimosegunda imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-42-59%20(1).jpg" alt="Descripción de la vigesimotercera imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-55-58%20(4).jpg" alt="Descripción de la vigesimocuarta imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Noveno bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-50-01%20(2).jpg" alt="Descripción de la vigesimoquinta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-42-59.jpg" alt="Descripción de la vigesimosexta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-00%20(1).jpg" alt="Descripción de la vigesimoséptima imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Décimo bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-42-43%20(2).jpg" alt="Descripción de la vigesimoctava imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-56-01%20(2).jpg" alt="Descripción de la vigesimonovena imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-43-00%20(4).jpg" alt="Descripción de la trigésima imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Undécimo bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-50-01%20(1).jpg" alt="Descripción de la trigésimo primera imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-50-00%20(1).jpg" alt="Descripción de la trigésimo segunda imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-42-43%20(1).jpg" alt="Descripción de la trigésimo tercera imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Duodécimo bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-49-43%20(1).jpg" alt="Descripción de la trigésimo cuarta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-50-01.jpg" alt="Descripción de la trigésimo quinta imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-43-00%20(3).jpg" alt="Descripción de la trigésimo sexta imagen">
+    </div>
+    <!-- Repite este bloque para cada imagen que desees agregar -->
+
+    <!-- Decimotercer bloque de imágenes -->
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/PHOTO-2024-06-17-21-50-00.jpg" alt="Descripción de la trigésimo séptima imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/IMG_3703.jpg" alt="Descripción de la trigésimo séptima imagen">
+    </div>
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/IMG_3702.jpg" alt="Descripción de la trigésimo séptima imagen">
+    </div>
+
+
+    <div class="pinterest-item">
+        <img src="file:///C:/Users/Coolby/Downloads/IMG_3698.jpg" alt="Descripción de la trigésimo séptima imagen">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

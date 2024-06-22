@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Reset styles and global body */
+        body {
+            font-family: 'Avenir', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, rgb(96, 108, 56), rgb(40, 54, 24));
+            color: rgb(254, 250, 224);
+        }
+
+        /* Button container styles */
+        .button-container {
+            display: flex;
+            justify-content: flex-start; /* Alinear botones a la izquierda */
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .button-container .button {
+            font-family: 'Okemo', sans-serif; /* Usar la fuente Okemo */
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgb(254, 250, 224);
+            padding: 8px 16px; /* Reducir el padding para hacer los botones más compactos */
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 20px; /* Reducir el tamaño de fuente */
+        }
+
+        
+        .button-container .button:hover {
+    background: linear-gradient(to right,  rgb(254, 250, 224), rgb(40, 54, 24),  rgb(254, 250, 224));
+    -webkit-background-clip: text; /* Para navegadores basados en WebKit (Safari, Chrome, etc.) */
+    background-clip: text; /* Para otros navegadores */
+    color: transparent; /* Hace que el texto sea transparente */
+    font-size: 13.5px;
+    font-family: Agraham;
+    
+    
+    
+}
+
+.button-container .button:active {
+    color: rgb(254, 250, 224);
+}
+
+
+        /* Main container */
+        .container {
+            text-align: center;
+            max-width: 650px;
+            width: 100%;
+            background: linear-gradient(to left, rgb(96, 108, 56), rgb(254, 250, 224));
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            margin-top: 100px; /* Ajuste para mover el contenedor hacia abajo */
+        }
+
+        .container p {
+            color: rgb(40, 54, 24);
+            font-size: 24px; /* Tamaño de fuente aumentado */
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* "You can count on me" button */
+        .container .count-on-me {
+            font-family: Agraham; /* Usar la fuente Agraham */
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(254, 250, 224);
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgb(96, 108, 56);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 16px; /* Ajustar tamaño de fuente */
+            display: inline-block;
+        }
+
+        .container .count-on-me:hover {
+            background-color: rgb(40, 54, 24);
+            background-image: linear-gradient(to left, rgb(96, 108, 56), rgb(40, 54, 24));
+           font-size: 18px;
+        }
+        .container .count-on-me:active {
+            background: linear-gradient(to left, rgb(96, 108, 56), rgb(254, 250, 224));
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="sam.html" class="button">Home</a>
+        <a href="ante.html" class="button">Samantha's Birthday</a>
+        <a href="bef.html" class="button">Your Space</a>
+    </div>
+    <div class="container">
+        <p>At our toughest times, when we are hitting rock bottom, we always need someone to count on...</p>
+        <a href="viaje.html" class="count-on-me">You can count on me</a>
+    </div>
+</body>
+</html>

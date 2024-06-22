@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to the place of melodies</title>
+<style>
+    body {
+        background-color:rgb(254, 250, 224);
+        padding: 0;
+        margin: 0;
+    }
+
+    .mel {
+        
+        background-image: linear-gradient(to right, rgb(96, 108, 56), rgb(40, 54, 24));
+        border: none;
+        font-style: normal;
+        font-size: 50px;
+        font-family: Agraham; /* Cambiada la fuente a Arial como alternativa común */
+        position: relative;
+        display: inline-block;
+        background-clip: text; /* Aplica el gradiente al texto */
+        -webkit-background-clip: text; /* Para compatibilidad con navegadores WebKit */
+        color: transparent; /* Oculta el color de texto por defecto */
+        animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+        text-align: center;
+        cursor: auto;
+        margin-left: 150px;
+        margin-right: 100px;
+        font-weight: bold;
+        
+    }
+
+    @keyframes moveGradient {
+        from {
+            background-position: 0% 50%; /* Comienza desde la izquierda */
+        }
+        to {
+            background-position: 100% 50%; /* Termina a la derecha */
+        }
+    }
+ 
+    .mel:hover {
+    background-color: rgb(254, 250, 224); /* Cambia el color de fondo al hacer hover */
+    background-image: linear-gradient(to right, rgb(40, 54, 24), rgb(96, 108, 56)); /* Gradiente invertido para el texto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+    }
+
+</style>
+</head>
+
+<body>
+    <p class="mel">Welcome to the place of melodies</p>
+</body>
+
+</html>

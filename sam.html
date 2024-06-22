@@ -1,0 +1,166 @@
+<style>
+body {
+    background-color: rgb(40, 54, 24);
+    color: rgb(254, 250, 224);
+}
+
+.sama {
+    text-align: center;
+    background-color: rgb(40, 54, 24);
+    background-image: linear-gradient(to right, rgb(254, 250, 224), rgb(96, 108, 56));
+    border: none;  
+    font-style: normal;
+    font-size: 70px;
+    cursor: pointer;
+    font-family: Agraham;
+    position: relative;
+    display: inline-block;
+    background-clip: text; /* Aplica el gradiente al texto */
+    -webkit-background-clip: text; /* Para compatibilidad con navegadores WebKit */
+    color: transparent; /* Oculta el color de texto por defecto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+    
+}
+
+.sama a {
+    color: inherit; /* Hereda el color del texto del botón */
+            text-decoration: none; /* Anula el subrayado del enlace */
+        }
+
+.arriba a {
+    color: inherit; /* Hereda el color del texto del botón */
+            text-decoration: none; /* Anula el subrayado del enlace */
+        }
+
+
+
+
+@keyframes moveGradient {
+    from {
+        background-position: 0% 50%; /* Comienza desde la izquierda */
+    }
+    to {
+        background-position: 100% 50%; /* Termina a la derecha */
+    }
+}
+
+.sama:hover {
+    background-color: rgb(254, 250, 224); /* Cambia el color de fondo al hacer hover */
+    background-image: linear-gradient(to right, rgb(96, 108, 56), rgb(254, 250, 224)); /* Gradiente invertido para el texto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+}
+
+
+.medio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+
+.ramona {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    height: 120px;
+    font-family: Avenir;
+    
+}
+
+
+.prison {
+    font-size: 20px;
+    margin-top: 0.2;
+    margin-left: 365px;
+    margin-right: 365px;
+    color: rgb(254, 250, 224);
+    text-align: center;
+    font-family: Avenir;
+}
+
+
+.arriba {
+    color: rgb(254, 250, 224);
+    background-color: rgb(40, 54, 24);
+    margin-right: 36px;
+    font-size: 17.5px;
+    font-weight: bold;
+    border: none;
+    font-family: Avenir;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.arriba:hover {
+    background-color: rgb(254, 250, 224); /* Cambia el color de fondo al hacer hover */
+    background-image: linear-gradient(to right, rgb(96, 108, 56), rgb(254, 250, 224)); /* Gradiente invertido para el texto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+font-family: Agraham;
+position: relative;
+    display: inline-block;
+    background-clip: text; /* Aplica el gradiente al texto */
+    -webkit-background-clip: text; /* Para compatibilidad con navegadores WebKit */
+    color: transparent; /* Oculta el color de texto por defecto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+}
+
+@keyframes moveGradient {
+    from {
+        background-position: 0% 50%; /* Comienza desde la izquierda */
+    }
+    to {
+        background-position: 100% 50%; /* Termina a la derecha */
+    }
+}
+
+
+.arriba:active {
+    font-family: Agraham;
+    color: rgb(254, 250, 224);
+}
+
+
+</style>
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Inicio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    
+    <div class="ramona">
+        <button class="arriba"><a href="file:///C:/Users/Coolby/Desktop/html-css-course/ante.html" class="arriba">Samantha's birthday</a></button>
+        <button class="arriba"><a href="file:///C:/Users/Coolby/Desktop/html-css-course/siento.html">18 Letterts for u</a></button>
+        <button class="arriba"><a href="file:///C:/Users/Coolby/Desktop/html-css-course/abre.html">Almost a decade together</a></button>
+        <button class="arriba"><a href="file:///C:/Users/Coolby/Desktop/html-css-course/bef.html"> Your space</a></button>
+        
+    </div>
+
+
+    <div class="medio">
+  <button class="sama"><b><a href="file:///C:/Users/Coolby/Desktop/html-css-course/ante.html">Hey, it's your birthday!!</a></b></button>
+  <p class="prison"> Finally your birthday has arrived, as of today you are of legal age, don't do something illegal, 
+    you could already go to prison, you are 18, and the opportunities and also the responsabilities are 
+coming, happy birthday my beautiful girlღ.</p>
+
+  <script src="script.js"></script>
+</div>
+
+    
+    <div class="imagenes">
+        
+    </div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,158 @@
+<style>
+body {
+  
+    background-image: url(https://images.unsplash.com/photo-1464347601390-25e2842a37f7?ixlib=rb-4.0.3);
+
+    /* Ajusta la imagen para cubrir todo el fondo */
+    background-size: cover;
+
+    /* Centra la imagen en el fondo */
+    background-position: center;
+
+    /* Evita la repetición de la imagen de fondo */
+    background-repeat: no-repeat;
+
+    /* Establece una altura mínima para asegurar que la imagen cubra la página completa */
+    min-height: 100vh;
+
+    /* Ajusta otros estilos para el cuerpo de la página */
+    font-family: Arial, sans-serif;
+    color: #333; /* Color de texto */
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    padding: 0; /* Elimina el relleno por defecto del cuerpo */
+    background-attachment: fixed;
+}
+
+.pedro {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    height: 82px;
+    font-family: okemo;
+   
+    
+}
+
+    .amor {
+    background-color: rgb(254, 250, 224);
+    background-image: linear-gradient(to right, rgb(188, 108, 37), rgb(221, 161, 94),  rgb(254, 250, 224)); /* Gradiente invertido para el texto */
+    font-family: okemo;
+    position: relative;
+    display: inline-block;
+    -webkit-background-clip: text; /* Aplica el gradiente al texto para navegadores WebKit */
+    background-clip: text; /* Aplica el gradiente al texto */
+    color: transparent; /* Oculta el color de texto por defecto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+    font-size: 75px;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-right: 70px;
+
+}
+
+@keyframes moveGradient {
+    from {
+        background-position: 0% 50%; /* Comienza desde la izquierda */
+    }
+    to {
+        background-position: 100% 50%; /* Termina a la derecha */
+    }
+}
+
+.amor:hover {
+    background-image: linear-gradient(rgb(254, 250, 224), rgb(221, 161, 94), rgb(188, 108, 37));
+}
+
+.ily {
+    
+    font-family: Avenir;
+    color: rgb(254, 250, 224);
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity: 0.5;
+
+}
+
+    
+
+
+
+.rr {
+    background-image: linear-gradient(rgb(254, 250, 224), rgb(221, 161, 94), rgb(188, 108, 37));
+    margin-right: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    font-family: Agraham;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 650px;
+    margin-right: 400px;
+    text-align: center;
+    border-radius: 19px;
+    width: auto;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    -webkit-background-clip: text; /* Aplica el gradiente al texto para navegadores WebKit */
+    background-clip: text; /* Aplica el gradiente al texto */
+    color: transparent; /* Oculta el color de texto por defecto */
+    animation: moveGradient 5s linear infinite; /* Animación para mover el gradiente */
+   
+
+
+}
+
+@keyframes moveGradient {
+    from {
+        background-position: 0% 50%; /* Comienza desde la izquierda */
+    }
+    to {
+        background-position: 100% 50%; /* Termina a la derecha */
+    }
+}
+
+    .rr:hover {
+  background-image: linear-gradient(to right, rgb(188, 108, 37), rgb(221, 161, 94),  rgb(254, 250, 224));
+  font-size: 25px;
+    }
+
+    .rr:active {
+        background-image: linear-gradient(to left, rgb(188, 108, 37), rgb(254, 250, 224));
+        font-size: 30px;
+    }
+
+    .rr a {
+            color: inherit; /* Hereda el color del texto del botón */
+            text-decoration: none; /* Anula el subrayado del enlace */
+        }
+
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Samantha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pedro"></div>
+        <h1 class="amor">Welcome to Samantha's birthday!</h1>
+    <button class="rr"><a href="file:///C:/Users/Coolby/Desktop/html-css-course/pinterest.html"> Click here</a></button>
+    <p class="ily">I invite you to explore what lies behind this button, let's immerse in the beauty of the birthday girl.♥️</p>
+
+</body>
+</html>
+

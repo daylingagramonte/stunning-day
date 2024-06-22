@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, rgb(96, 108, 56), rgb(40, 54, 24), rgb(254, 250, 224));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgb(254, 250, 224); /* Crema */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 340px;
+        }
+        h1 {
+            color: rgb(96, 108, 56); /* Verde oscuro */
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: 'Agraham', sans-serif; /* Fuente Agraham */
+        }
+        .calculator {
+            background: linear-gradient(to right, rgb(96, 108, 56), rgb(40, 54, 24), rgb(254, 250, 224));
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        #display {
+            border: none;
+            background-color: rgb(254, 250, 224); /* Crema */
+            font-size: 32px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: calc(100% - 20px);
+            border-radius: 5px;
+            text-align: right;
+            box-sizing: border-box;
+        }
+        .keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+        button {
+            background-color: rgb(40, 54, 24); /* Verde oscuro */
+            border: none;
+            color: rgb(254, 250, 224); /* Crema */
+            cursor: pointer;
+            font-size: 20px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background-color: rgb(96, 108, 56); /* Verde más claro */
+        }
+        .equals {
+            grid-column: span 2;
+            background-color: rgb(96, 108, 56); /* Verde más claro */
+            color: rgb(254, 250, 224); /* Crema */
+        }
+        .equals:hover {
+            background-color: rgb(40, 54, 24); /* Verde oscuro */
+        }
+        .clear {
+            background-color: rgb(254, 250, 224); /* Crema */
+            color: rgb(40, 54, 24); /* Verde oscuro */
+        }
+        .clear:hover {
+            background-color: rgb(96, 108, 56); /* Verde más claro */
+            color: rgb(254, 250, 224); /* Crema */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="keys">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="operation('+')">+</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="operation('-')">-</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="operation('*')">*</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button class="clear" onclick="clearDisplay()">C</button>
+                <button onclick="operation('/')">/</button>
+                <button class="equals" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function appendToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function operation(operator) {
+            document.getElementById('display').value += operator;
+        }
+
+        function calculate() {
+            try {
+                let result = eval(document.getElementById('display').value);
+                if (Number.isNaN(result) || !Number.isFinite(result))
+                    throw 'Error';
+                document.getElementById('display').value = result;
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
+
